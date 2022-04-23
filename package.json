@@ -10,7 +10,6 @@
 	"dependencies": {
 		"@octokit/rest": "^16.35.0",
 		"@zeit/next-css": "^1.0.1",
-		"@zeit/next-sass": "^1.0.1",
 		"bcryptjs": "^2.4.3",
 		"connect-mongo": "^3.1.2",
 		"dotenv": "^8.2.0",
@@ -20,14 +19,18 @@
 		"next": "latest",
 		"next-connect": "^0.5.1",
 		"next-session": "^2.1.1",
-		"node-sass": "^4.13.1",
-		"passport": "^0.4.0",
+		"passport": "^0.4.1",
 		"passport-github2": "^0.1.11",
 		"passport-local": "^1.0.0",
-		"react": "^16.8.6",
-		"react-dom": "^16.8.6",
+		"passport-raven": "^2.0.0",
+		"prop-types": "^15.8.1",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
 		"serialize-javascript": "^2.1.1",
 		"webpack": "^4.41.2"
 	},
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"sass": "^1.50.1"
+	}
 }

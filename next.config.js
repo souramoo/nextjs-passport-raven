@@ -1,4 +1,3 @@
-const withSass = require('@zeit/next-sass');
 const withCSS = require('@zeit/next-css');
 const webpack = require('webpack');
 
@@ -9,8 +8,7 @@ require('dotenv').config();
 const customConfig = require('./lib/config');
 
 // Wrap webpack using withCSS and withSCSS so we can use regular css and scss files
-module.exports = withCSS(
-	withSass({
+module.exports = {
 		env: {
 			loginFailureURL: '/login',
 			loginSuccessURL: '/private'
@@ -31,5 +29,5 @@ module.exports = withCSS(
 
 			return config;
 		}
-	})
-);
+	}
+
