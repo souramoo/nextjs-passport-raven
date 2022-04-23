@@ -20,6 +20,7 @@ const Private = (props) => {
 						<li>Github ID: {user.github.id}</li>
 						<li>Name: {user.name}</li>
 						<li>Email: {user.email}</li>
+						<li>Lives: {user.lives}</li>
 					</>
 				)}
 

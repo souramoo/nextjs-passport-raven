@@ -30,7 +30,7 @@ const AppContainer = ({ children, userData, router }) => {
 };
 
 AppContainer.getInitialProps = async ({ req }) => {
-	const userData = await fetchWithCreds(req, 'http://localhost:3000/api/user');
+	const userData = await fetchWithCreds(req, process.env.NEXT_PUBLIC_HOST + '/api/user');
 	return { userData };
 };
 

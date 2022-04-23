@@ -17,6 +17,8 @@ handler.get(async (req, res, next) => {
 	switch (provider) {
 		case 'github':
 			return passport.authenticate('github')(req, res, next);
+		case 'raven':
+			return passport.authenticate('raven')(req, res, next);
 		case 'local':
 			res.status(200).json({ provider, status: 'local login provided at /api/auth/local with method POST' });
 			break;

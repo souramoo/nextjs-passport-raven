@@ -25,7 +25,7 @@ const User = ({ failedAuth, protectedData }) => {
 };
 
 User.getInitialProps = async ({ req }) => {
-	const profileData = await fetchWithCreds(req, 'http://localhost:3000/api/protected-route');
+	const profileData = await fetchWithCreds(req, process.env.NEXT_PUBLIC_HOST + '/api/protected-route');
 	return { ...profileData };
 };
 
